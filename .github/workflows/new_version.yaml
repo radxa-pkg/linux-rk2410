@@ -65,4 +65,4 @@ name: "Create release"
         required: true
         type: "boolean"
 permissions: {}
-run-name: "${{ inputs.update && 'Update submodule' }}${{ inputs.update && inputs.release && ' & ' }}${{ inputs.release && 'Release new version' }}"
+run-name: "${{ inputs.update && 'Update submodule' || '' }}${{ inputs.update && inputs.release && ' & ' || '' }}${{ inputs.release && 'Release new version' }}"
