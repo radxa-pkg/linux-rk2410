@@ -1,3 +1,2 @@
 linux/0001-feat-Radxa-common-kernel-config.patch
 linux/0002-feat-Radxa-custom-kernel-config.patch
-linux/0003-fix-import-namespace-DMA_BUF-before-using-it.patch
