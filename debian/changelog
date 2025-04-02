@@ -1,5 +1,11 @@
-linux-rk2410 (6.1.84-5) UNRELEASED; urgency=medium
+linux-rk2410 (6.1.84-5) unstable; urgency=medium
 
+  [ "Radxa Computer Co., Ltd" ]
   * Add initial Debian packaging support
 
- -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Thu, 01 Jan 1970 08:00:00 +0800
+  [ ZHANG Yuntian ]
+  * fix: disable explicit Mali CSF and IOCTL hack
+  * fix: use Rockchip RK3588 config
+  * chore: update git submodule
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Wed, 02 Apr 2025 09:56:36 +0000
