@@ -38,15 +38,10 @@ jobs:
           export DEBFULLNAME='"Radxa Computer Co., Ltd"'
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git branch -m GITHUB_RUNNER || true
-          git branch -D main || true
-          git switch -c main || true
           make dch
           make test deb
-          if [[ "${{ github.event.inputs.release }}" == "false" ]]; then
-              git reset --hard HEAD~1
-          fi
-    - name: "Push"
+    - if: "github.event.inputs.release == 'true'"
+      name: "Push"
       run: |
         git push
       shell: "bash"
@@ -65,4 +60,4 @@ name: "Create release"
         required: true
         type: "boolean"
 permissions: {}
-run-name: "${{ inputs.update && 'Update submodule' || '' }}${{ inputs.update && inputs.release && ' & ' || '' }}${{ inputs.release && 'Release new version' }}"
+run-name: "${{ inputs.update && 'Update submodule' || '' }}${{ inputs.update && inputs.release && ' & ' || '' }}${{ inputs.release && 'Release new version' }}${{ !inputs.update && !inputs.release && 'Test for new release' || '' }}"
