@@ -114,7 +114,7 @@ jobs:
           ${{ env.changes }}
         tag_name: "${{ env.version }}"
     - name: "Update Test repos"
-      uses: "radxa-repo/update-repo-action@main"
+      uses: "RadxaOS-SDK/rsdk/.github/actions/infra-repo-update@main"
       with:
         test-repo: true
         token: "${{ secrets.RADXA_APT_TEST_REPO_TOKEN }}"
