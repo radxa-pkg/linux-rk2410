@@ -1,3 +1,10 @@
+linux-rk2410 (6.1.84-6) unstable; urgency=medium
+
+  [ github-actions[bot] ]
+  * chore: update submodules
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Fri, 18 Apr 2025 07:23:30 +0000
+
 linux-rk2410 (6.1.84-5) unstable; urgency=medium
 
   [ "Radxa Computer Co., Ltd" ]
