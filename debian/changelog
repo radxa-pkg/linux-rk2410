@@ -1,3 +1,13 @@
+linux-rk2410 (6.1.84-9) unstable; urgency=medium
+
+  [ ZHANG Yuntian ]
+  * fix: limit package release to related SoC repo
+
+  [ github-actions[bot] ]
+  * chore: update submodules
+
+ -- "Radxa Computer (Shenzhen) Co., Ltd." <dev@radxa.com>  Fri, 30 Oct 2026 06:15:52 +0000
+
 linux-rk2410 (6.1.84-8) unstable; urgency=medium
 
   [ Jiali Chen ]
