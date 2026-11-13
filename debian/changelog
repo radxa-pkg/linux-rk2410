@@ -1,3 +1,10 @@
+linux-rk2410 (6.1.84-10) unstable; urgency=medium
+
+  [ github-actions[bot] ]
+  * chore: update submodules
+
+ -- "Radxa Computer (Shenzhen) Co., Ltd." <dev@radxa.com>  Fri, 13 Nov 2026 09:27:49 +0000
+
 linux-rk2410 (6.1.84-9) unstable; urgency=medium
 
   [ ZHANG Yuntian ]
