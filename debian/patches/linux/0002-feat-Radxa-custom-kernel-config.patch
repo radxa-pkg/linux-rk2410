@@ -5,8 +5,8 @@ Subject: [PATCH] feat: Radxa custom kernel config
 
 Signed-off-by: ZHANG Yuntian <yt@radxa.com>
 ---
- src/arch/arm64/configs/radxa_custom.config | 101 ++++++++++++++++++++++++++
- 1 file changed, 101 insertions(+)
+ src/arch/arm64/configs/radxa_custom.config | 104 ++++++++++++++++++++++++++
+ 1 file changed, 104 insertions(+)
  create mode 100644 src/arch/arm64/configs/radxa_custom.config
 
 diff --git a/src/arch/arm64/configs/radxa_custom.config b/src/arch/arm64/configs/radxa_custom.config
@@ -14,19 +14,22 @@ new file mode 100644
 index 000000000000..d9550fafb022
 --- /dev/null
 +++ b/src/arch/arm64/configs/radxa_custom.config
-@@ -0,0 +1,101 @@
+@@ -0,0 +1,104 @@
 +# Do not create kernel debug package
 +CONFIG_DEBUG_INFO=n
 +
 +# Add camera support
 +# These have to be built in, otherwise phy-rockchip-csi2-dphy
 +# will be loaded before them (and fail to initialize the camera)
++CONFIG_VIDEO_AR0234=y
 +CONFIG_VIDEO_GC2053=y
 +CONFIG_VIDEO_GC2093=y
 +CONFIG_VIDEO_GC8034=y
++CONFIG_VIDEO_IMX214=y
 +CONFIG_VIDEO_IMX219=y
 +CONFIG_VIDEO_IMX415=y
 +CONFIG_VIDEO_IMX464=y
++CONFIG_VIDEO_IMX577=y
 +CONFIG_VIDEO_OS04A10=y
 +CONFIG_VIDEO_OV4689=y
 +CONFIG_VIDEO_OV5647=y
